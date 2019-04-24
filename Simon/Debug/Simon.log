@@ -1,0 +1,18 @@
+﻿  TopRightGrid.cpp
+  TopLeftGrid.cpp
+  main.cpp
+  BottomRightGrid.cpp
+  BottomLeftGrid.cpp
+  Board.cpp
+m:\visual studio 2017\projects\simon\simon\board.cpp(40): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+VMIGameEngine-d.lib(BoundingBox.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(BoundingBox.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+VMIGameEngine-d.lib(Game.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(Game.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+VMIGameEngine-d.lib(MovingThing.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(MovingThing.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+VMIGameEngine-d.lib(PolygonShape.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(PolygonShape.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+VMIGameEngine-d.lib(Text.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(Text.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+VMIGameEngine-d.lib(Thing.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(Thing.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+VMIGameEngine-d.lib(Timer.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(Timer.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+VMIGameEngine-d.lib(Vector2d.obj) : warning LNK4099: PDB 'VMIGameEngine.pdb' was not found with 'VMIGameEngine-d.lib(Vector2d.obj)' or at 'M:\Visual Studio 2017\Projects\Simon\Debug\VMIGameEngine.pdb'; linking object as if no debug info
+  Simon.vcxproj -> M:\Visual Studio 2017\Projects\Simon\Debug\Simon.exe
+  Simon.vcxproj -> M:\Visual Studio 2017\Projects\Simon\Debug\Simon.pdb (Partial PDB)
