@@ -5,8 +5,10 @@
 #include "TopRightGrid.h"
 #include "BottomLeftGrid.h"
 #include "BottomRightGrid.h"
+#include "glut.h"
 
 #include <cstdlib>
+
 
 // Create game with 800x600 window
 Board::Board() : Game("My Board Game", 800, 600)
@@ -24,6 +26,33 @@ Board::~Board()
 void Board::update(double dt)
 {
 	// any needed game logic goes here
+}
+
+//void Board::glutMouseFunc(void(*mousepress)(int button, int state, double x, double y)) {}
+
+int Board::mousepress(int button, int state, double x, double y) {
+	if (state == GLUT_DOWN) {
+
+		mouse_x = x;
+		mouse_y = y;
+
+		mouse_y = WINDOWSIZE - mouse_y;
+		printf("mouse pressed at (%d,%d)\n", mouse_x, mouse_y);
+
+		if (mouse_x <= 0 && mouse_y >= 0) {
+			return 0;
+		}
+		else if (mouse_x >= 0 && mouse_y >= 0) {
+			return 1;
+		}
+		else if (mouse_x <= 0 && mouse_y <= 0) {
+			return 2;
+		}
+		else if (mouse_x >= 0 && mouse_y <= 0) {
+			return 3;
+		}
+
+	}
 }
 
 void Board::addNumSequence() {

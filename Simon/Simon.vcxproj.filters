@@ -30,6 +30,9 @@
     <ClInclude Include="BottomRightGrid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GL\glut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board.cpp">
@@ -50,5 +53,23 @@
     <ClCompile Include="BottomRightGrid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GL\glut.def">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GL\glut32.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="GL\glut32.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="GL\README-win32.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

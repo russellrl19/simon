@@ -116,6 +116,7 @@
     <ClInclude Include="Board.h" />
     <ClInclude Include="BottomLeftGrid.h" />
     <ClInclude Include="BottomRightGrid.h" />
+    <ClInclude Include="GL\glut.h" />
     <ClInclude Include="TopLeftGrid.h" />
     <ClInclude Include="TopRightGrid.h" />
   </ItemGroup>
@@ -126,6 +127,16 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TopLeftGrid.cpp" />
     <ClCompile Include="TopRightGrid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GL\glut.def" />
+    <None Include="GL\glut32.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="GL\glut32.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="GL\README-win32.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
