@@ -12,12 +12,10 @@ public:
 
 	void update(double dt);
 
-	int mousepress(int button, int state, double x, double y);
+	int mousepress(int button, double x, double y);
 	//void glutMouseFunc(void(*mousepress)(int button, int state, double x, double y));
 
 private:
-	//used this website to solve error for vector not being a template:
-	//https://stackoverflow.com/questions/16704090/vector-is-not-a-template
 	std::vector<int> sequence;
 	std::vector<int> user;
 

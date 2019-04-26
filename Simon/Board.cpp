@@ -6,38 +6,35 @@
 #include "BottomLeftGrid.h"
 #include "BottomRightGrid.h"
 #include "glut.h"
+#include "glut32.dll"
 
 #include <cstdlib>
 
 
 // Create game with 800x600 window
-Board::Board() : Game("My Board Game", 800, 600)
-{
+Board::Board() : Game("My Board Game", 800, 600) {
 	// any other initialization that is needed
 	startLevel();
 }
 
-Board::~Board()
-{
+Board::~Board() {
 	// delete anything that was allocated with new in constructor
 }
 
 // Called once per frame
-void Board::update(double dt)
-{
+void Board::update(double dt) {
 	// any needed game logic goes here
 }
 
 //void Board::glutMouseFunc(void(*mousepress)(int button, int state, double x, double y)) {}
 
-int Board::mousepress(int button, int state, double x, double y) {
-	if (state == GLUT_DOWN) {
+int Board::mousepress(int button, double x, double y) {
+	if (button == GLUT_LEFT_BUTTON) {
 
 		mouse_x = x;
 		mouse_y = y;
 
 		mouse_y = WINDOWSIZE - mouse_y;
-		printf("mouse pressed at (%d,%d)\n", mouse_x, mouse_y);
 
 		if (mouse_x <= 0 && mouse_y >= 0) {
 			return 0;
@@ -51,8 +48,8 @@ int Board::mousepress(int button, int state, double x, double y) {
 		else if (mouse_x >= 0 && mouse_y <= 0) {
 			return 3;
 		}
-
 	}
+	glutPostRedisplay();
 }
 
 void Board::addNumSequence() {
@@ -67,12 +64,10 @@ void Board::selected(int colorSelected) {
 
 void Board::compare() {
 	for (int i = 0; i < sequence.size(); i++) {
-		if (sequence.at(i) == user.at(i))
-		{
+		if (sequence.at(i) == user.at(i)) {
 
 		}
-		else
-		{
+		else {
 			//end game
 		}
 	}
@@ -81,8 +76,7 @@ void Board::compare() {
 }
 
 
-void Board::startLevel()
-{
+void Board::startLevel() {
 	new	TopLeftGrid();
 	new TopRightGrid();
 	new BottomLeftGrid();
